@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    position: relative;
+}
+
+article div{
+    position: relative;
+    border: 2px, solid, blue;
+}
+
+div div img{
+    border-radius: 50%;
+    position: absolute;
+
+}

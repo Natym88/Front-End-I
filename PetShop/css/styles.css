@@ -1,0 +1,36 @@
+*{
+    font-family: Roboto, Serif;
+}
+
+.nav1{
+    background-color: #222222;
+    color: #F3F3F3;
+}
+
+.nav2{
+    background-color: #F0A83E;
+    color: #FFFFFF;
+}
+
+main{
+    background-color: #E5E5E5;
+}
+
+h4{
+    color: #3C2313;
+    font-size: 30px;
+}
+
+main section div{
+    text-align: center;
+}
+
+main section div i{
+    color: #F0A83E;
+
+}
+
+ul li{
+    list-style-type: none;
+}
+
