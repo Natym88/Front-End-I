@@ -1,19 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #1CD1B0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 0;
 }
 
 article{
-    position: relative;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    border-radius: 16px 16px 0 0;
 }
 
+h1{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #00669F;
+    font-size: 40px;
+    padding: 26px;
+}
 article div{
     position: relative;
-    border: 2px, solid, blue;
 }
 
-div div img{
+article div i{
+    color: red;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+
+div img{
     border-radius: 50%;
     position: absolute;
+    top: 137px;
+    right: 83px;
+    z-index: 0.8;
+}
 
+.bannerTarjetaBatman{
+    height: 193px;
+    background-image: url('../img/fondoBatman.png');
+}
+
+.bannerTarjetaHarley{
+    height: 193px;
+    background-image: url('../img/fondoHarley.png');
+}
+
+h3{
+    margin-top: 80px;
+}
+
+.contenidoTarjeta{
+    text-align: left;
+    margin: 15px;
+    box-shadow: 2px;
+}
+
+button{
+    width: 128px;
+    height: 48px;
+    margin: 30px;
+    color: #F3F3F3;
+    background-color: #00669F;
+    border: none;
+}
+
+footer{
+    color: #FFF9F9;
+    background-color: #00669F;
+    font-size: 16px;
+    padding: 16px;
 }
