@@ -50,11 +50,12 @@ article div i{
     font-size: 20px;
 }
 
-div img{
+article div img{
+    width: 120px;
     border-radius: 50%;
     position: absolute;
-    top: 137px;
-    right: 83px;
+    top: 133px;
+    right: 90px;
     z-index: 0.8;
 }
 
@@ -82,9 +83,12 @@ button{
     width: 128px;
     height: 48px;
     margin: 30px;
+    position: relative;
+    left: 56px;
     color: #F3F3F3;
     background-color: #00669F;
     border: none;
+    text-align: center;
 }
 
 footer{
