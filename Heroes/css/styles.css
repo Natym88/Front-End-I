@@ -8,7 +8,7 @@
 }
 
 header{
-    background-color: #1CD1B0;
+    background-color: #D1891C;
     font-size: 15px;
     padding: 10px;
 }
@@ -23,17 +23,18 @@ section{
 article{
     text-align: center;
     width: 300px;
-    margin: 20px;
-    display: flex;
+    position: relative;
     flex-direction: column;
     background-color: #f3f3f3;
     border-radius: 16px 16px 0 0;
+    
 }
 
 h1{
     position: sticky;
     top: 0;
     z-index: 1;
+    color: #FFFFFF;
     background-color: #00669F;
     font-size: 40px;
     padding: 26px;
@@ -57,16 +58,31 @@ article div img{
     top: 133px;
     right: 90px;
     z-index: 0.8;
+    
 }
 
 .bannerTarjetaBatman{
     height: 193px;
+    border-radius: 16px 16px 0 0;
     background-image: url('../img/fondoBatman.png');
 }
 
 .bannerTarjetaHarley{
     height: 193px;
+    border-radius: 16px 16px 0 0;
     background-image: url('../img/fondoHarley.png');
+}
+
+.bannerTarjetaSuperman{
+    height: 193px;
+    border-radius: 16px 16px 0 0;
+    background-image: url('../img/fondoSuperman.png');
+}
+
+.bannerTarjetaWW{
+    height: 193px;
+    border-radius: 16px 16px 0 0;
+    background-image: url('../img/fondoMujerMaravilla.png');
 }
 
 h3{
@@ -77,14 +93,16 @@ h3{
     text-align: left;
     margin: 15px;
     box-shadow: 2px;
+    height: 336px;
+   
 }
 
 button{
     width: 128px;
     height: 48px;
-    margin: 30px;
-    position: relative;
-    left: 56px;
+    position: absolute;
+    right: 85px;
+    bottom: 20px;
     color: #F3F3F3;
     background-color: #00669F;
     border: none;
@@ -92,8 +110,17 @@ button{
 }
 
 footer{
+    position: relative;
     color: #FFF9F9;
     background-color: #00669F;
     font-size: 16px;
     padding: 16px;
+    text-align: center;
+}
+
+footer img{
+    position: absolute;
+    right: 6%;
+    bottom: 12px;
+    height: 24px;
 }
