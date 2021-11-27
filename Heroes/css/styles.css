@@ -8,37 +8,126 @@
 }
 
 header{
-    background-color: #D1891C;
+   
+    background-color: #1CD1B0;
     font-size: 15px;
+    padding: 4px;
+    height: 4vh;
+}
+
+nav{
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
     padding: 10px;
+}
+
+nav a{
+    color: #FFFFFF;
+    margin: 5px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
 }
 
 section{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 100px 0;
+    margin: 15vh 0;
+}
+
+.form{
+    display: block;
+    width: 25vw;
+    height: 46vh;
+}
+
+.form div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+
+
+input, select{
+    width: 100%;
+    height: 5vh;
+}
+
+textarea{
+    width: 100%;
+}
+
+form div button{
+    border-radius: 20px;
+    width: 45%;
+    background-color: #1CD1B0;
+    color: black;
+    border: none;
+    height: 4vh;
+}
+
+button[type=reset]{
+    background-color: #888888;
+    color: white;
 }
 
 article{
     text-align: center;
     width: 300px;
     position: relative;
+    margin: 30px;
     flex-direction: column;
     background-color: #f3f3f3;
     border-radius: 16px 16px 0 0;
     
 }
 
-h1{
+/* h1{
+    position: sticky;
+    top: 0;
+    z-index: 0.9;
+    color: #FFFFFF;
+    background-color: #00669F;
+    font-size: 40px;
+    padding: 26px;
+} */
+
+.logo{
     position: sticky;
     top: 0;
     z-index: 1;
     color: #FFFFFF;
     background-color: #00669F;
-    font-size: 40px;
-    padding: 26px;
+    
 }
+
+.logo h1{
+    display: inline-block;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.logo img{
+    height: 70px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+/* h1::before{
+    content: ' ';
+    background-image: url('../img/logo\ 1.png');
+    background-size: cover;
+    width: 6vw;
+    height: 6vh;
+    
+} */
+
 article div{
     position: relative;
 }
@@ -55,35 +144,47 @@ article div img{
     width: 120px;
     border-radius: 50%;
     position: absolute;
-    top: 133px;
-    right: 90px;
+    top: calc( 193px - 120px /2);
+    right: calc( 50% - 120px /2);
     z-index: 0.8;
     
 }
+
+
 
 .bannerTarjetaBatman{
     height: 193px;
     border-radius: 16px 16px 0 0;
     background-image: url('../img/fondoBatman.png');
+    background-size: cover;
 }
 
 .bannerTarjetaHarley{
     height: 193px;
     border-radius: 16px 16px 0 0;
     background-image: url('../img/fondoHarley.png');
+    background-size: cover;
 }
 
 .bannerTarjetaSuperman{
     height: 193px;
     border-radius: 16px 16px 0 0;
     background-image: url('../img/fondoSuperman.png');
+    background-size: cover;
 }
 
 .bannerTarjetaWW{
     height: 193px;
     border-radius: 16px 16px 0 0;
     background-image: url('../img/fondoMujerMaravilla.png');
+    background-size: cover;
 }
+
+/* article div:nth-of-type(1){
+    height: 193px;
+    border-radius: 16px 16px 0 0;
+    background-size: cover;
+} */
 
 h3{
     margin-top: 80px;
@@ -97,11 +198,11 @@ h3{
    
 }
 
-button{
+article button{
     width: 128px;
     height: 48px;
     position: absolute;
-    right: 85px;
+    left: calc(50% - 64px);
     bottom: 20px;
     color: #F3F3F3;
     background-color: #00669F;
@@ -116,6 +217,7 @@ footer{
     font-size: 16px;
     padding: 16px;
     text-align: center;
+    height: 7vh;
 }
 
 footer img{
@@ -123,4 +225,36 @@ footer img{
     right: 6%;
     bottom: 12px;
     height: 24px;
+}
+
+.mas{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    background-color: #00669F;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    top: calc(50% - 25px )
+}
+
+@media (max-width: 1440px) {
+    article{
+        width: 400px;
+        margin: 50px;
+    }
+
+    header{
+        background-color: #D1891C;
+    }
+}
+
+@media (max-width: 970px) {
+    article{
+        width: 85%;
+        max-width: 550px;
+        margin: 20px 10%;
+    }
 }
